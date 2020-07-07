@@ -9,9 +9,7 @@ class HomeController extends Controller
 {
     public function index() {
         $all_clothes = Cloth::all();
-        $data = [
-            'clothes_list' => $all_clothes
-        ];
-        return view('clothes')->with($data);
+        // dd($all_clothes);
+        return view('clothes', ['all_clothes' => $all_clothes]);
     }
 }

@@ -15,11 +15,11 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($clothes_list as $cloth)
+                    @foreach ($all_clothes as $cloth)
                         <tr>
                             <td>{{ $cloth->id }}</td>
-                            <td>{{ $movie->clothing_item }}</td>
-                            <td>{{ $movie->color }}</td>
+                            <td>{{ $cloth->clothing_item }}</td>
+                            <td>{{ $cloth->color }}</td>
                         </tr>
                     @endforeach
                 </tbody>
